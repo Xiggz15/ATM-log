@@ -1,0 +1,77 @@
+[07:59:02] [main/WARN] [minecraft/Main]: Failed to load datapacks, can't proceed with server load. You can either fix your datapacks or reset to vanilla with --safeMode
+java.util.concurrent.ExecutionException: net.minecraft.ReportedException: Loading NBT data
+        at java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396) ~[?:?] {re:mixin}
+        at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2073) ~[?:?] {re:mixin}
+        at net.minecraft.server.Main.main(Main.java:195) ~[server-1.20.1-20230612.114412-srg.jar%23889!/:?] {re:mixin,re:classloading,pl:mixin:A}
+        at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?] {}
+        at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?] {}
+        at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?] {}
+        at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?] {re:mixin}
+        at net.minecraftforge.fml.loading.targets.CommonLaunchHandler.runTarget(CommonLaunchHandler.java:111) ~[fmlloader-1.20.1-47.2.19.jar%2369!/:?] {}
+        at net.minecraftforge.fml.loading.targets.CommonLaunchHandler.serverService(CommonLaunchHandler.java:103) ~[fmlloader-1.20.1-47.2.19.jar%2369!/:?] {}
+        at net.minecraftforge.fml.loading.targets.CommonServerLaunchHandler.lambda$makeService$0(CommonServerLaunchHandler.java:27) ~[fmlloader-1.20.1-47.2.19.jar%2369!/:?] {}
+        at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:30) ~[modlauncher-10.0.9.jar%2355!/:?] {}
+        at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53) ~[modlauncher-10.0.9.jar%2355!/:?] {}
+        at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71) ~[modlauncher-10.0.9.jar%2355!/:?] {}
+        at cpw.mods.modlauncher.Launcher.run(Launcher.java:108) ~[modlauncher-10.0.9.jar%2355!/:?] {}
+        at cpw.mods.modlauncher.Launcher.main(Launcher.java:78) ~[modlauncher-10.0.9.jar%2355!/:?] {}
+        at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar%2355!/:?] {}
+        at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar%2355!/:?] {}
+        at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?] {}
+Caused by: net.minecraft.ReportedException: Loading NBT data
+        at net.minecraft.nbt.CompoundTag.m_128413_(CompoundTag.java:480) ~[server-1.20.1-20230612.114412-srg.jar%23889!/:?] {re:computing_frames,pl:accesstransformer:B,re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:modernfix-common.mixins.json:perf.nbt_memory_usage.CompoundTagMixin,pl:mixin:A}
+        at net.minecraft.nbt.CompoundTag$1.m_7300_(CompoundTag.java:45) ~[server-1.20.1-20230612.114412-srg.jar%23889!/:?] {re:mixin,re:classloading,pl:mixin:APP:modernfix-common.mixins.json:perf.nbt_memory_usage.CompoundTag1Mixin,pl:mixin:A}
+        at net.minecraft.nbt.CompoundTag$1.m_7300_(CompoundTag.java:32) ~[server-1.20.1-20230612.114412-srg.jar%23889!/:?] {re:mixin,re:classloading,pl:mixin:APP:modernfix-common.mixins.json:perf.nbt_memory_usage.CompoundTag1Mixin,pl:mixin:A}
+        at net.minecraft.nbt.ListTag$1.m_7300_(ListTag.java:43) ~[server-1.20.1-20230612.114412-srg.jar%23889!/:?] {re:classloading}
+        at net.minecraft.nbt.ListTag$1.m_7300_(ListTag.java:26) ~[server-1.20.1-20230612.114412-srg.jar%23889!/:?] {re:classloading}
+        at net.minecraft.nbt.CompoundTag.m_128413_(CompoundTag.java:474) ~[server-1.20.1-20230612.114412-srg.jar%23889!/:?] {re:computing_frames,pl:accesstransformer:B,re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:modernfix-common.mixins.json:perf.nbt_memory_usage.CompoundTagMixin,pl:mixin:A}
+        at net.minecraft.nbt.CompoundTag$1.m_7300_(CompoundTag.java:45) ~[server-1.20.1-20230612.114412-srg.jar%23889!/:?] {re:mixin,re:classloading,pl:mixin:APP:modernfix-common.mixins.json:perf.nbt_memory_usage.CompoundTag1Mixin,pl:mixin:A}
+        at net.minecraft.nbt.CompoundTag$1.m_7300_(CompoundTag.java:32) ~[server-1.20.1-20230612.114412-srg.jar%23889!/:?] {re:mixin,re:classloading,pl:mixin:APP:modernfix-common.mixins.json:perf.nbt_memory_usage.CompoundTag1Mixin,pl:mixin:A}
+        at net.minecraft.nbt.CompoundTag.m_128413_(CompoundTag.java:474) ~[server-1.20.1-20230612.114412-srg.jar%23889!/:?] {re:computing_frames,pl:accesstransformer:B,re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:modernfix-common.mixins.json:perf.nbt_memory_usage.CompoundTagMixin,pl:mixin:A}
+        at net.minecraft.nbt.CompoundTag$1.m_7300_(CompoundTag.java:45) ~[server-1.20.1-20230612.114412-srg.jar%23889!/:?] {re:mixin,re:classloading,pl:mixin:APP:modernfix-common.mixins.json:perf.nbt_memory_usage.CompoundTag1Mixin,pl:mixin:A}
+        at net.minecraft.nbt.CompoundTag$1.m_7300_(CompoundTag.java:32) ~[server-1.20.1-20230612.114412-srg.jar%23889!/:?] {re:mixin,re:classloading,pl:mixin:APP:modernfix-common.mixins.json:perf.nbt_memory_usage.CompoundTag1Mixin,pl:mixin:A}
+        at net.minecraft.nbt.NbtIo.m_128930_(NbtIo.java:153) ~[server-1.20.1-20230612.114412-srg.jar%23889!/:?] {re:mixin,re:classloading}
+        at net.minecraft.nbt.NbtIo.m_128934_(NbtIo.java:99) ~[server-1.20.1-20230612.114412-srg.jar%23889!/:?] {re:mixin,re:classloading}
+        at net.minecraft.nbt.NbtIo.m_128939_(NbtIo.java:35) ~[server-1.20.1-20230612.114412-srg.jar%23889!/:?] {re:mixin,re:classloading}
+        at net.minecraft.nbt.NbtIo.m_128937_(NbtIo.java:25) ~[server-1.20.1-20230612.114412-srg.jar%23889!/:?] {re:mixin,re:classloading}
+        at net.minecraft.world.level.storage.LevelStorageSource.m_264027_(LevelStorageSource.java:234) ~[server-1.20.1-20230612.114412-srg.jar%23889!/:?] {re:mixin,re:classloading,pl:mixin:APP:modernfix-forge.mixins.json:bugfix.removed_dimensions.LevelStorageSourceMixin,pl:mixin:APP:mixins.irons_spellbooks.json:DataFixLevelStorageSourceMixin,pl:mixin:A}
+        at net.minecraft.world.level.storage.LevelStorageSource.m_230817_(LevelStorageSource.java:202) ~[server-1.20.1-20230612.114412-srg.jar%23889!/:?] {re:mixin,re:classloading,pl:mixin:APP:modernfix-forge.mixins.json:bugfix.removed_dimensions.LevelStorageSourceMixin,pl:mixin:APP:mixins.irons_spellbooks.json:DataFixLevelStorageSourceMixin,pl:mixin:A}
+        at net.minecraft.world.level.storage.LevelStorageSource$LevelStorageAccess.m_246049_(LevelStorageSource.java:439) ~[server-1.20.1-20230612.114412-srg.jar%23889!/:?] {re:mixin,re:classloading}
+        at net.minecraft.server.Main.lambda$main$1(Main.java:170) ~[server-1.20.1-20230612.114412-srg.jar%23889!/:?] {re:mixin,re:classloading,pl:mixin:A}
+        at net.minecraft.server.WorldLoader.m_214362_(WorldLoader.java:35) ~[server-1.20.1-20230612.114412-srg.jar%23889!/:?] {re:mixin,xf:fml:libx:registry_load,re:classloading,xf:fml:libx:registry_load,pl:mixin:APP:ldlib-common.mixins.json:WorldLoaderMixin,pl:mixin:A}
+        at net.minecraft.server.Main.lambda$main$2(Main.java:167) ~[server-1.20.1-20230612.114412-srg.jar%23889!/:?] {re:mixin,re:classloading,pl:mixin:A}
+        at net.minecraft.Util.m_214652_(Util.java:777) ~[server-1.20.1-20230612.114412-srg.jar%23889!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:kubejs-common.mixins.json:UtilMixin,pl:mixin:APP:modernfix-common.mixins.json:perf.thread_priorities.UtilMixin,pl:mixin:APP:ftbchunks-common.mixins.json:UtilMixin,pl:mixin:APP:bettermineshafts.mixins.json:SuppressLogMixin,pl:mixin:A}
+        at net.minecraft.Util.m_214679_(Util.java:772) ~[server-1.20.1-20230612.114412-srg.jar%23889!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:kubejs-common.mixins.json:UtilMixin,pl:mixin:APP:modernfix-common.mixins.json:perf.thread_priorities.UtilMixin,pl:mixin:APP:ftbchunks-common.mixins.json:UtilMixin,pl:mixin:APP:bettermineshafts.mixins.json:SuppressLogMixin,pl:mixin:A}
+        at net.minecraft.server.Main.main(Main.java:166) ~[server-1.20.1-20230612.114412-srg.jar%23889!/:?] {re:mixin,re:classloading,pl:mixin:A}
+        ... 15 more
+Caused by: java.io.IOException: Invalid tag id: 110
+        at net.minecraft.nbt.TagType$1.m_197591_(TagType.java:58) ~[server-1.20.1-20230612.114412-srg.jar%23889!/:?] {re:classloading}
+        at net.minecraft.nbt.TagType$1.m_7300_(TagType.java:63) ~[server-1.20.1-20230612.114412-srg.jar%23889!/:?] {re:classloading}
+        at net.minecraft.nbt.TagType$1.m_7300_(TagType.java:56) ~[server-1.20.1-20230612.114412-srg.jar%23889!/:?] {re:classloading}
+        at net.minecraft.nbt.CompoundTag.m_128413_(CompoundTag.java:474) ~[server-1.20.1-20230612.114412-srg.jar%23889!/:?] {re:computing_frames,pl:accesstransformer:B,re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:modernfix-common.mixins.json:perf.nbt_memory_usage.CompoundTagMixin,pl:mixin:A}
+        at net.minecraft.nbt.CompoundTag$1.m_7300_(CompoundTag.java:45) ~[server-1.20.1-20230612.114412-srg.jar%23889!/:?] {re:mixin,re:classloading,pl:mixin:APP:modernfix-common.mixins.json:perf.nbt_memory_usage.CompoundTag1Mixin,pl:mixin:A}
+        at net.minecraft.nbt.CompoundTag$1.m_7300_(CompoundTag.java:32) ~[server-1.20.1-20230612.114412-srg.jar%23889!/:?] {re:mixin,re:classloading,pl:mixin:APP:modernfix-common.mixins.json:perf.nbt_memory_usage.CompoundTag1Mixin,pl:mixin:A}
+        at net.minecraft.nbt.ListTag$1.m_7300_(ListTag.java:43) ~[server-1.20.1-20230612.114412-srg.jar%23889!/:?] {re:classloading}
+        at net.minecraft.nbt.ListTag$1.m_7300_(ListTag.java:26) ~[server-1.20.1-20230612.114412-srg.jar%23889!/:?] {re:classloading}
+        at net.minecraft.nbt.CompoundTag.m_128413_(CompoundTag.java:474) ~[server-1.20.1-20230612.114412-srg.jar%23889!/:?] {re:computing_frames,pl:accesstransformer:B,re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:modernfix-common.mixins.json:perf.nbt_memory_usage.CompoundTagMixin,pl:mixin:A}
+        at net.minecraft.nbt.CompoundTag$1.m_7300_(CompoundTag.java:45) ~[server-1.20.1-20230612.114412-srg.jar%23889!/:?] {re:mixin,re:classloading,pl:mixin:APP:modernfix-common.mixins.json:perf.nbt_memory_usage.CompoundTag1Mixin,pl:mixin:A}
+        at net.minecraft.nbt.CompoundTag$1.m_7300_(CompoundTag.java:32) ~[server-1.20.1-20230612.114412-srg.jar%23889!/:?] {re:mixin,re:classloading,pl:mixin:APP:modernfix-common.mixins.json:perf.nbt_memory_usage.CompoundTag1Mixin,pl:mixin:A}
+        at net.minecraft.nbt.CompoundTag.m_128413_(CompoundTag.java:474) ~[server-1.20.1-20230612.114412-srg.jar%23889!/:?] {re:computing_frames,pl:accesstransformer:B,re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:modernfix-common.mixins.json:perf.nbt_memory_usage.CompoundTagMixin,pl:mixin:A}
+        at net.minecraft.nbt.CompoundTag$1.m_7300_(CompoundTag.java:45) ~[server-1.20.1-20230612.114412-srg.jar%23889!/:?] {re:mixin,re:classloading,pl:mixin:APP:modernfix-common.mixins.json:perf.nbt_memory_usage.CompoundTag1Mixin,pl:mixin:A}
+        at net.minecraft.nbt.CompoundTag$1.m_7300_(CompoundTag.java:32) ~[server-1.20.1-20230612.114412-srg.jar%23889!/:?] {re:mixin,re:classloading,pl:mixin:APP:modernfix-common.mixins.json:perf.nbt_memory_usage.CompoundTag1Mixin,pl:mixin:A}
+        at net.minecraft.nbt.NbtIo.m_128930_(NbtIo.java:153) ~[server-1.20.1-20230612.114412-srg.jar%23889!/:?] {re:mixin,re:classloading}
+        at net.minecraft.nbt.NbtIo.m_128934_(NbtIo.java:99) ~[server-1.20.1-20230612.114412-srg.jar%23889!/:?] {re:mixin,re:classloading}
+        at net.minecraft.nbt.NbtIo.m_128939_(NbtIo.java:35) ~[server-1.20.1-20230612.114412-srg.jar%23889!/:?] {re:mixin,re:classloading}
+        at net.minecraft.nbt.NbtIo.m_128937_(NbtIo.java:25) ~[server-1.20.1-20230612.114412-srg.jar%23889!/:?] {re:mixin,re:classloading}
+        at net.minecraft.world.level.storage.LevelStorageSource.m_264027_(LevelStorageSource.java:234) ~[server-1.20.1-20230612.114412-srg.jar%23889!/:?] {re:mixin,re:classloading,pl:mixin:APP:modernfix-forge.mixins.json:bugfix.removed_dimensions.LevelStorageSourceMixin,pl:mixin:APP:mixins.irons_spellbooks.json:DataFixLevelStorageSourceMixin,pl:mixin:A}
+        at net.minecraft.world.level.storage.LevelStorageSource.m_230817_(LevelStorageSource.java:202) ~[server-1.20.1-20230612.114412-srg.jar%23889!/:?] {re:mixin,re:classloading,pl:mixin:APP:modernfix-forge.mixins.json:bugfix.removed_dimensions.LevelStorageSourceMixin,pl:mixin:APP:mixins.irons_spellbooks.json:DataFixLevelStorageSourceMixin,pl:mixin:A}
+        at net.minecraft.world.level.storage.LevelStorageSource$LevelStorageAccess.m_246049_(LevelStorageSource.java:439) ~[server-1.20.1-20230612.114412-srg.jar%23889!/:?] {re:mixin,re:classloading}
+        at net.minecraft.server.Main.lambda$main$1(Main.java:170) ~[server-1.20.1-20230612.114412-srg.jar%23889!/:?] {re:mixin,re:classloading,pl:mixin:A}
+        at net.minecraft.server.WorldLoader.m_214362_(WorldLoader.java:35) ~[server-1.20.1-20230612.114412-srg.jar%23889!/:?] {re:mixin,xf:fml:libx:registry_load,re:classloading,xf:fml:libx:registry_load,pl:mixin:APP:ldlib-common.mixins.json:WorldLoaderMixin,pl:mixin:A}
+        at net.minecraft.server.Main.lambda$main$2(Main.java:167) ~[server-1.20.1-20230612.114412-srg.jar%23889!/:?] {re:mixin,re:classloading,pl:mixin:A}
+        at net.minecraft.Util.m_214652_(Util.java:777) ~[server-1.20.1-20230612.114412-srg.jar%23889!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:kubejs-common.mixins.json:UtilMixin,pl:mixin:APP:modernfix-common.mixins.json:perf.thread_priorities.UtilMixin,pl:mixin:APP:ftbchunks-common.mixins.json:UtilMixin,pl:mixin:APP:bettermineshafts.mixins.json:SuppressLogMixin,pl:mixin:A}
+        at net.minecraft.Util.m_214679_(Util.java:772) ~[server-1.20.1-20230612.114412-srg.jar%23889!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:kubejs-common.mixins.json:UtilMixin,pl:mixin:APP:modernfix-common.mixins.json:perf.thread_priorities.UtilMixin,pl:mixin:APP:ftbchunks-common.mixins.json:UtilMixin,pl:mixin:APP:bettermineshafts.mixins.json:SuppressLogMixin,pl:mixin:A}
+        at net.minecraft.server.Main.main(Main.java:166) ~[server-1.20.1-20230612.114412-srg.jar%23889!/:?] {re:mixin,re:classloading,pl:mixin:A}
+        ... 15 more
+
+
